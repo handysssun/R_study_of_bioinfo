@@ -1,0 +1,4 @@
+#导入文件
+read.csv()#逗号分隔符
+read.table()#txt文件
+read.
