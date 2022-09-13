@@ -50,3 +50,33 @@ lapply(strsplit(tmp,',') , function(x){length(x)})#lapply()是对list中的每�
 #去列表化
 unlist()
 
+#替换函数
+sub('','',a)
+
+#去重
+unique()
+
+#排序
+sort()
+
+#apply函数
+apply(data,1/2,mean)#对data的行或列进行求均值
+
+
+#高阶数据处理技巧，使用rpackages
+#管道符%>%
+#以下两种形式等价
+library(dplyr)
+strsplit(a$Name,',')
+a$Name %>% strsplit(',') 
+
+#stringr包
+library(stringr)
+vignette("stringr")
+str_split(a$Name, ',', simplify = T)#分割结果不是list，而是dataframe
+#将列表进行rbind()可以得到dataframe
+
+
+
+
+
