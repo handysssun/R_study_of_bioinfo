@@ -4,6 +4,3 @@ read.table()#txt文件
 #读取文件
 a = read.table('abc.txt', head = T, sep = '\t')
 
-#读入xlsx文件
-read.
-
