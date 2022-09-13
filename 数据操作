@@ -36,3 +36,7 @@ f = a[which(a[,1] == 'RNA-seq'),]
 table(a[,1] == 'RNA-seq')
 table(a[,18]) #对18列的不同内容进行计数
 tablea(a$tissue)  #第十八列的列名tissue
+
+#正则表达
+grep()
+grepl()#返回的是trueorfalse
