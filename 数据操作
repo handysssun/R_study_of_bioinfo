@@ -40,3 +40,13 @@ tablea(a$tissue)  #第十八列的列名tissue
 #正则表达
 grep()
 grepl()#返回的是trueorfalse
+
+#字符串切割
+strsplit（x,''）#切割得到一个list，[[]]取元素，可以是向量，[]取子list，可存在多个向量
+
+#循环
+lapply(strsplit(tmp,',') , function(x){length(x)})#lapply()是对list中的每一个元素执行一个操作，此时执行取长度的操作，list中的每一个元素赋值给了x
+
+#去列表化
+unlist()
+
